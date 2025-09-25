@@ -1,0 +1,99 @@
+﻿@font-face {
+  font-family: 'CacChampagne';
+  src: url('cac_champagne.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'DobkinPlain';
+  src: url('DobkinPlain.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 2
+   Case Problem 4
+   
+   Great Lakescape Lodge Style Sheet
+   Author: 
+   Date:   
+   
+   Filename: lake_styles.css
+
+*/
+
+body{
+  background-color:blanchedalmond;
+}
+/*header*/
+header li a {
+   text-decoration: none;
+   color: rgba(255, 255, 255, 0.5);
+   font-weight: bold;
+   background-color:rgb(122, 69, 109);
+}
+
+section#leftcol {
+  background-color:rgb(49, 49, 49);
+  color: rgb(255, 255, 255);
+}
+
+section#leftcol>h1 {
+  font-family: 'CacChampagne', 'Georgia', serif;
+  color: rgb(255, 255, 255);
+  font-size: 4em;
+  line-height: 0; 
+}
+
+section#leftcol aside h1{
+  text-align: center; 
+  vertical-align: middle;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 2em;
+
+}
+
+section#leftcol aside a {
+  color: rgb(219, 82, 105);
+  text-decoration: none;
+}
+
+section#leftcol aside:nth-of-type(1){
+  background-color :rgb(249, 157, 134);
+}
+
+section#leftcol aside:nth-of-type(2){
+  background-color :rgb(212, 165, 71);
+}
+
+section#rightcol {
+  background-color: rgb(106, 52, 120);
+  color: rgb(0, 0, 0);
+}
+
+section#rightcol h2 {
+  font-family: 'DobkinPlain', 'Arial', sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+section#rightcol ul a{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+}
+section#rightcol ul {
+  list-style: none;
+}
+section#rightcol blockquote {
+  color: rgb(255, 0, 212);
+}
+
+footer {
+  background-color: rgb(51, 35, 47);
+  color: rgb(255, 255, 255);
+  
+}

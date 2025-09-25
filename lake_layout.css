@@ -1,0 +1,115 @@
+﻿@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 2
+   Case Problem 4
+   
+   The Great Lakescape Lodge Layout Styles
+   Filename: lake_layout.css
+
+*/
+
+
+/* Structural Styles */
+
+body {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1020px;
+	min-width: 640px;
+}
+
+body > header > img {
+	width: 100%;
+	display: block;
+	margin: 0;
+}
+
+footer {
+	clear: both;
+}
+
+address, article, aside, blockquote, body, cite, 
+div, dl, dt, dd, em, figcaption, figure, footer, 
+h1, h2, h3, h4, h5, h6, header, html, img, 
+li, main, nav, ol, p, section, span, ul {
+
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;  
+}
+
+
+/* Header Navigation */
+
+header > nav {
+	display: table;
+	width: 100%;
+}
+
+header > nav > ul {
+	display: table-row;
+	list-style-type: none;
+}
+
+header > nav > ul > li {
+	display: table-cell;
+	text-align: center;
+}
+
+header > nav a {
+	display: block;
+	width: 100%;
+}
+
+
+/* Section Layout */
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-column: repeat(4,1fr);
+    gap: 0; 
+    align-items: start; 
+}
+
+
+section#leftcol {
+    display: grid;
+    grid-column: 1/4;
+    gap: 20px;
+    padding: 20px;
+	
+}
+
+section#leftcol aside p{
+	margin: 20px;
+}
+
+/* Right Column */
+section#rightcol {
+    display: grid;
+    grid-column: 4;
+    gap: 20px;
+    padding: 10px;
+	height: 100%;
+}
+
+section#leftcol .aside-container {
+	
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 1rem; 
+
+}
+
+
+section#leftcol img {
+	width: 100%;
+	display: block;
+	padding: 10px 0; 
+	margin: 0;
+	border: 5px solid #053460; 
+  box-shadow: 0 8px 25px #3146af, 0 3px 8px rgba(10, 65, 184, 0.2); 
+}
