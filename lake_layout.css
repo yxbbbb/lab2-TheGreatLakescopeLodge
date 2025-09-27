@@ -12,7 +12,7 @@
 
 
 /* Structural Styles */
-
+/* Main body container settings */
 body {
 	margin: 0 auto;
 	width: 100%;
@@ -20,16 +20,19 @@ body {
 	min-width: 640px;
 }
 
+/* Header logo image styling */
 body > header > img {
 	width: 100%;
 	display: block;
 	margin: 0;
 }
 
+/* Footer clear fix to ensure proper positioning */
 footer {
 	clear: both;
 }
 
+/* Universal box-sizing for all elements */
 address, article, aside, blockquote, body, cite, 
 div, dl, dt, dd, em, figcaption, figure, footer, 
 h1, h2, h3, h4, h5, h6, header, html, img, 
@@ -42,22 +45,25 @@ li, main, nav, ol, p, section, span, ul {
 
 
 /* Header Navigation */
-
+/* Navigation container using table layout */
 header > nav {
 	display: table;
 	width: 100%;
 }
 
+/* Navigation list as table row */
 header > nav > ul {
 	display: table-row;
 	list-style-type: none;
 }
 
+/* Navigation items as table cells */
 header > nav > ul > li {
 	display: table-cell;
 	text-align: center;
 }
 
+/* Navigation link styling */
 header > nav a {
 	display: block;
 	width: 100%;
@@ -65,7 +71,7 @@ header > nav a {
 
 
 /* Section Layout */
-
+/* Main content grid container */
 main {
     grid-area: main;
     display: grid;
@@ -74,7 +80,7 @@ main {
     align-items: start; 
 }
 
-
+/* Left content column - spans first 3 columns */
 section#leftcol {
     display: grid;
     grid-column: 1/4;
@@ -83,6 +89,7 @@ section#leftcol {
 	
 }
 
+/* Left column aside paragraph margins */
 section#leftcol aside p{
 	margin: 20px;
 }
@@ -96,6 +103,7 @@ section#rightcol {
 	height: 100%;
 }
 
+/* Aside container for two-column aside layout */
 section#leftcol .aside-container {
 	
   display: grid;
@@ -104,7 +112,7 @@ section#leftcol .aside-container {
 
 }
 
-
+/* Left column image styling */
 section#leftcol img {
 	width: 100%;
 	display: block;

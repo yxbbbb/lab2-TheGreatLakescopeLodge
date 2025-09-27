@@ -1,4 +1,5 @@
-﻿@font-face {
+﻿/* Custom font definitions */
+@font-face {
   font-family: 'CacChampagne';
   src: url('cac_champagne.ttf') format('truetype');
   font-weight: normal;
@@ -22,11 +23,12 @@
    Filename: lake_styles.css
 
 */
-
+/* Body background color */
 body{
   background-color:blanchedalmond;
 }
 /*header*/
+/* Navigation link styling */
 header li a {
    text-decoration: none;
    color: rgba(255, 255, 255, 0.5);
@@ -34,11 +36,13 @@ header li a {
    background-color:rgb(122, 69, 109);
 }
 
+/* Left Column Styles - Main content area */
 section#leftcol {
   background-color:rgb(49, 49, 49);
   color: rgb(255, 255, 255);
 }
 
+/* Left column main heading */
 section#leftcol>h1 {
   font-family: 'CacChampagne', 'Georgia', serif;
   color: rgb(255, 255, 255);
@@ -46,6 +50,7 @@ section#leftcol>h1 {
   line-height: 0; 
 }
 
+/* Aside headings in left column */
 section#leftcol aside h1{
   text-align: center; 
   vertical-align: middle;
@@ -56,24 +61,29 @@ section#leftcol aside h1{
 
 }
 
+/* Aside links in left column */
 section#leftcol aside a {
   color: rgb(219, 82, 105);
   text-decoration: none;
 }
 
+/* First aside background color */
 section#leftcol aside:nth-of-type(1){
   background-color :rgb(249, 157, 134);
 }
 
+/* Second aside background color */
 section#leftcol aside:nth-of-type(2){
   background-color :rgb(212, 165, 71);
 }
 
+/* Right Column Styles - Sidebar styling */
 section#rightcol {
   background-color: rgb(106, 52, 120);
   color: rgb(0, 0, 0);
 }
 
+/* Right column headings */
 section#rightcol h2 {
   font-family: 'DobkinPlain', 'Arial', sans-serif;
   color: rgb(255, 255, 255);
@@ -81,17 +91,23 @@ section#rightcol h2 {
   font-weight: bold;
 }
 
+/* Right column navigation links */
 section#rightcol ul a{
   text-decoration: none;
   color: rgba(255, 255, 255, 0.5);
 }
+
+/* Right column list styling */
 section#rightcol ul {
   list-style: none;
 }
+
+/* Right column blockquote styling */
 section#rightcol blockquote {
   color: rgb(255, 0, 212);
 }
 
+/* Footer Styles - Bottom section */
 footer {
   background-color: rgb(51, 35, 47);
   color: rgb(255, 255, 255);
